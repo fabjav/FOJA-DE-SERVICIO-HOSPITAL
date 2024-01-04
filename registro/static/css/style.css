@@ -1,0 +1,72 @@
+.campo_form{
+    color: rgb(139, 199, 121) ;
+    font-weight: lighter;
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(199,297,187);
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+}
+.campo_form::placeholder{
+    color: rgb(139, 199, 121) ;
+}
+.cnt1{
+    background-color: white;
+    padding: 100px;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+}
+.divForm{
+    background-color: rgb(199,237,187) ;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    height: 300px;
+    
+}
+.barra{
+    background-color: white;
+    margin: auto;
+    width: 580px;
+    padding: 10px;
+    color: blue;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+.encabezado{
+    text-align: center;
+    display: flex;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 600px;
+    margin: auto;
+}
+h3{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+body{
+    background-color:  rgb(216, 242, 208);
+}
+.btn1{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+
+.btn1:hover{
+    cursor: pointer;
+}
