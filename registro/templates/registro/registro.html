@@ -17,10 +17,19 @@
 
 <h2>Registro</h2>
 
-<form method="post" action="{% url 'registro' %}">
+<form method="post" action="registro/">
   {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Registrarse">
+  <div class="form-group">
+    <input type="text" id="txtName" name="txtName" placeholder="DNI">
+  </div>
+  <div class="form-group">
+    <input type="text" id="txtName" name="txtName" placeholder="DNI">
+  </div>
+  <div class="form-group">
+    <input type="text" id="txtName" name="txtName" placeholder="DNI">
+  </div>
+  <div class="form-group"></div>
+  <input type="submit" value="Registrar">
 </form>
 
 <script src="{% static 'js/index.js' %}"></script>
