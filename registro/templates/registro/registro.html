@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        /* Estilo para indicar que el campo de contraseña está bloqueado */
+        #id_contraseña {
+            background-color: #f2f2f2; /* Color de fondo gris claro */
+            color: #888; /* Color de texto gris */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Registro</h2>
+
+<form method="post" action="{% url 'registro' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Registrarse">
+</form>
+
+<script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>
