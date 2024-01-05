@@ -26,3 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
     const exito = "{{ exito }}";
     console.log(exito);
   });
+
+  

@@ -9,3 +9,4 @@ class CambioAdmin(admin.ModelAdmin):
 @admin.register(Resolucion)
 class ResolucionAdmin(admin.ModelAdmin):
     list_display = ('numero', 'descripcion')
+

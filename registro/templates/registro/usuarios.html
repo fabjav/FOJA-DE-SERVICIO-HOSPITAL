@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="cnt1">
+        <div>
+            <table class="tb1">
+                <thead >
+                    <tr>
+                        
+                        <th class="enc">DNI</th>
+                        <th class="enc">Nombre</th>
+                        <th class="enc">Apellido</th>
+                        <th class="enc"></th>
+                        <th class="enc"></th>
+                    </tr>
+                </thead>
+                <tbody class="conbody" id="ttbody">
+                    <!-- Filas de usuarios se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+    
+        </div>
+       
+    </div>
+   
+   
+    
+    <script src="{% static 'js/usuarios.js' %}"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, HttpResponseRedirect, redirect
-from .forms import RegistroForm, crearResolucion, crearRegistro
-from datetime import datetime
+from .forms import RegistroForm, crearResolucion
 from .models import Cambio, Resolucion
-
+from datetime import datetime
+from django.http import JsonResponse
 def registro(request):
     if request.method == 'POST':
         form = RegistroForm(request.POST)
@@ -54,8 +54,13 @@ def crear_resolucion(request):
     return render(request, 'registro/crear_resolucion.html', {'form': form})
 
 
-def crear_registro(request):
-    if request.method == 'POST':
-        form: crearRegistro(request.POST)
-        if form.is_valid():
-            #crear registro
+def get_usuarios(request):
+    usuarios = list(User.objects.values())
+    if (len(usuarios) > 0):
+        data = {'message': 'Succes','usuarios': usuarios}
+    else:
+        data = {'message': 'not found'}
+    return JsonResponse(data)
+
+def index(request):
+    return render(request, 'registro/usuarios.html')

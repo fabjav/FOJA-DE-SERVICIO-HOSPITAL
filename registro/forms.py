@@ -34,5 +34,5 @@ class crearResolucion(forms.Form):
     fecha_aprobacion = forms.DateField(
         widget=forms.DateInput(attrs={'type': 'date'})
     )
-class crearRegistro(forms.Form):
-    nombre 
+
+     
