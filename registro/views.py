@@ -64,3 +64,4 @@ def get_usuarios(request):
 
 def index(request):
     return render(request, 'registro/usuarios.html')
+
