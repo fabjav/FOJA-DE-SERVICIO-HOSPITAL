@@ -1,8 +1,3 @@
-# Ignorar archivos del entorno virtual
 venv/
-
-# Ignorar archivos de migraciones Django
 migrations/
-
-# Ignorar archivo de base de datos SQLite
 db.sqlite3
