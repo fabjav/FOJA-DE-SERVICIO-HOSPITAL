@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de usuarios</title>
+    <link rel="stylesheet" href="{% static 'css/styles_registros.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont2">
+            <div id="cont3" class="cont3">
+                <h1 id="titulo_registro_nombre"></h1>
+                <h2 id="not__found"></h2>
+                <table class="tabla-registros" id="tabla_registros">
+                    <thead>
+                        <tr>
+                            <th class="fecha">Fecha</th>
+                            <th class="des">Descripción</th>
+                            <th class="res">Resolucion N°</th>
+        
+                        </tr>
+        
+                    </thead>
+                    <tbody id="tabla_registros_tbody"></tbody>
+                    
+                </table>
+        
+            </div>
+        </div>
+       
+    </div>
+
+
+    <script src="{% static 'js/registros.js' %}"></script>
+</body>
+
+</html>

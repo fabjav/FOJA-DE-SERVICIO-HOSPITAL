@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Título predeterminado{% endblock %}</title>
+</head>
+
+<body>
+  <div class="div-flotante">
+
+    <div class="encabezado">
+      <div>
+        <H1>HOSPITAL<br> SCHESTAKOW</H1>
+      </div>
+      <div>
+        <h2>FOJA DE DE SERVICIO</h2>
+      </div>
+
+
+    </div>
+
+    <div class="barra">
+      <h3>Bienvenido, Nombre!</h3>
+      <h3>ADMINISTRADOR</h3>
+    </div>
+  </div>
+  
+  {% block content %}{% endblock %}
+</body>
+
+</html>

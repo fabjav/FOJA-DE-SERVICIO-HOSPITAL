@@ -1,4 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,27 +21,13 @@
 </head>
 
 <body>
-  <div class="encabezado">
-    <div style="width: 300px; margin-right: 40px;">
-      <H1 style="text-align: left; font-size: 40px;">HOSPITAL SCHESTAKOW</H1>
-    </div>
-    <div style="font-size: 15px; display: flex; align-items: flex-end; height: 135px;">
-      <h2>FOJA DE DE SERVICIO</h2>
-    </div>
-
-
-  </div>
-
-  <div class="barra">
-    <h3>Bienvenido, Nombre!</h3>
-    <h3>ADMINISTRADOR</h3>
-  </div>
-  <div class="cnt1">
+ 
+  <div class="cnt1-registro">
 
 
 
     <div class="divForm">
-      <form method="post" action="{% url 'registro' %}">
+      <form method="post" action="{% url 'registro' %}"> <!-- envía datos a la url  -->
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn1">
@@ -73,3 +61,4 @@
 </body>
 
 </html>
+{% endblock %}

@@ -13,12 +13,98 @@
 .campo_form::placeholder{
     color: rgb(139, 199, 121) ;
 }
+.divMadreBusqueda{
+    
+    display: flex;
+    
+}
+/* contenedor blanco */
 .cnt1{
     background-color: white;
-    padding: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    width: 320px;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* contenedor verde */
+.cnt2{
+    background-color: rgb(170, 223, 156);
+    margin-right: auto;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
     width: 400px;
+    height: 400px;
+}
+.cnt1-registro{
+    background-color: white;
+    padding: 100px;
+    width: 46%;
     margin: auto;
     border-radius: 20px;
+}
+.opc{
+    background-color: red;
+    border-radius: 20px;
+    color: blue;
+}
+.opc:checked{
+
+    color: black;
+}
+.tituloFormRegistro{
+    
+    margin-left: 10px;
+    
+}
+.paginacion{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.con1{
+    font-size: 14px;
+    border-bottom: 1px solid rgb(120, 190, 120);
+    height: 40px;
+}
+.con2{
+    font-size: 14px;
+    border-bottom: 1px solid rgb(116, 173, 116);
+    height: 40px;
+}
+.txtCamp{
+    width: 80%;
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+
+
+}
+.btnRegistro1{
+    border: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 20px;
+    
+}
+
+.btnRegistro1:hover{
+    cursor: pointer;
 }
 .divForm{
     background-color: rgb(199,237,187) ;
@@ -33,24 +119,20 @@
 .barra{
     background-color: white;
     margin: auto;
-    width: 580px;
-    padding: 10px;
-    color: blue;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    padding: 20px;
+   
     border-radius: 15px;
     margin-bottom: 20px;
 
 }
-.encabezado{
-    text-align: center;
-    display: flex;
+.barra h3{
     color: blue;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    
-    width: 600px;
-    margin: auto;
+    margin-left: 100px;
 }
+
 h3{
     margin-top: 1px;
     margin-bottom: 1px;
@@ -58,6 +140,7 @@ h3{
 
 body{
     background-color:  rgb(216, 242, 208);
+   
 }
 .btn1{
     border-radius: 5px;
@@ -84,24 +167,7 @@ body{
     
     
 }
-.con1{
-    border-bottom: 1px solid rgb(216, 242, 208);
-    padding: 5px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    height: 20px
-}
 
-.con2{
-    border-bottom: 1px solid rgb(159, 201, 147);
-    padding: 5px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    height: 20px;
-
-}
 
 
 .btnRegistro{
@@ -127,4 +193,103 @@ table {
     text-indent: 0; /* Eliminar la sangría del primer elemento de texto en un bloque */
     border-spacing: 0; /* Eliminar el espacio entre las celdas */
    
+}
+.barrabusqueda{
+    background-color: rgb(212, 233, 206);
+    border: none;
+    margin-bottom: 6px;
+    height: 30px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.encabezado{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    margin-left: 500px;
+    height: 200px;
+
+}
+.encabezado h1{
+    font-size: 60px;
+    color: blue;
+    text-align: left;
+}
+.encabezado h2{
+    font-size: 30px;
+    color: blue;
+    text-align: left;
+    line-height: 255px;
+    margin-left: 10px;
+}
+.mensajeEstadoRegistro{
+    
+    padding: 50px;
+    
+    width: 210px;
+    text-align: center;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    
+    
+    
+}
+
+/* menú resoluciones personalizado */
+.enc-resolucion{
+    background-color: red;
+    border-radius: 8px;
+    max-width: 300px; 
+    padding: 5px;
+    text-align: center;
+}
+.enc-resolucion:hover{
+    cursor: pointer;
+}
+.opc-resolucion {
+    background-color: red;
+    border-radius: 8px;
+    max-width: 300px; 
+    padding: 5px;
+    display: none;
+    position: fixed;
+}
+.opc-resolucion-valor {
+    border-bottom: 1px solid green;
+    
+    white-space: nowrap;         /* Evita el salto de línea */
+      overflow: hidden;            /* Oculta el contenido que sobresale */
+      text-overflow: ellipsis;     /* Muestra puntos suspensivos (...) cuando el texto se corta */
+        
+
+}
+.opc-resolucion-valor:hover{
+    background-color: blue;
+    cursor: pointer;
+
+}
+.mensaje_en_pantalla{
+    padding: 20px;
+    color: rgb(26, 57, 24);
+    background-color: rgb(94, 235, 103);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+     
+}
+.mensaje_en_pantalla h3{
+    margin-bottom: 20px;
+}
+.mensaje_en_pantalla button {
+    margin-right: 20px;
 }

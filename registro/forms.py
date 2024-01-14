@@ -1,4 +1,5 @@
 from django import forms
+from .models import Resolucion
 
 class RegistroForm(forms.Form):
     usuario = forms.CharField(
@@ -32,7 +33,12 @@ class crearResolucion(forms.Form):
     )
     
     fecha_aprobacion = forms.DateField(
-        widget=forms.DateInput(attrs={'type': 'date'})
+        
     )
 
-     
+class crearRegistroADM(forms.Form):
+    resolucion = forms.CharField(max_length=70)
+    descripcion = forms.CharField(max_length=70)
+    fecha = forms.DateField(
+        widget=forms.DateInput(attrs={'type': 'date'})
+    )
